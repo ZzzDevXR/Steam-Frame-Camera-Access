@@ -15,7 +15,6 @@ constexpr Color rgb(int hex, double a = 1.0) {
   return {((hex >> 16) & 0xff) / 255.0, ((hex >> 8) & 0xff) / 255.0, (hex & 0xff) / 255.0, a};
 }
 constexpr Color kGround = rgb(0x000000);
-constexpr Color kPanel = rgb(0x151515);
 constexpr Color kWell = rgb(0x2a2a2a);
 constexpr Color kChalk = rgb(0xfff3e8);
 constexpr Color kChalkMuted = rgb(0xc9beb3);

@@ -29,6 +29,7 @@ endif()
 add_executable(fca_probe native/tools/fca_probe.c)
 target_link_libraries(fca_probe PRIVATE frame_camera_access)
 target_compile_options(fca_probe PRIVATE ${FCA_WARNINGS})
+set_target_properties(fca_probe PROPERTIES BUILD_RPATH "$ORIGIN")
 
 add_executable(frame-camera-accessd
   native/daemon/main.cpp

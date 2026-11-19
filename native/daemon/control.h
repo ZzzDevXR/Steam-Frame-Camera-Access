@@ -17,7 +17,6 @@ class ControlServer {
   ControlServer& operator=(const ControlServer&) = delete;
 
   void poll(Access& access, const std::string& state, const std::string& status, int64_t now_ns);
-  size_t prompt_count() const { return prompts_.size(); }
 
  private:
   bool is_trusted_prompt(int fd) const;
